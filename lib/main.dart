@@ -18,11 +18,14 @@ class MyApp extends StatelessWidget {
         title: 'inDECISIVE',
         theme: ThemeData(
           primarySwatch: Colors.green,
+          // accentColor: Colors.black,
           visualDensity: VisualDensity.adaptivePlatformDensity,
+          // TODO add text theme
+          textTheme: TextTheme(),
         ),
         initialRoute: '/',
         routes: {
-          '/': (context) => HomeScreen(),
+          '/': (context) => LoginScreen(),
           '/home': (context) => HomeScreen(),
           '/create_account': (context) => CreateAccountScreen(),
           '/pick_games': (context) => PickGamesScreen(),

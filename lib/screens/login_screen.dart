@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:indecisive/models/user.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -8,13 +7,6 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
-
-  // FOR TESTING ONLY
-  List<User> allUsers = [
-    User(id: 'U1432423', userName: 'Nick', password: 'pass321'),
-    User(id: 'U1435431', userName: 'Anny', password: 'pass321'),
-    User(id: 'U3242312', userName: 'Chase', password: 'pass321'),
-  ];
 
   @override
   Widget build(BuildContext context) {
