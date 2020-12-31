@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:indecisive/dummy_data.dart';
+import 'package:indecisive/models/user.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -7,6 +9,8 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
+  // playerList from dummay_data.dart
+  var listOfUsers = playerList;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     TextFormField(
                       // TODO add other validations
+                      //controller: ,
                       validator: (value) {
                         if (value.isEmpty) {
                           return 'Please enter a valid email';
